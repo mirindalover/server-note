@@ -18,7 +18,7 @@
 
 6. SHOW STATUS  查询sql服务器状态，可以通过like 'xx'查询多个
 
-   [对应枚举](https://www.mysqlzh.com/doc/40/413.html)
+   [对应枚举值](https://www.mysqlzh.com/doc/40/413.html)
 
 7. show  VARIABLES 查询服务器的配置
 
@@ -36,11 +36,15 @@
 	
 #### 关联
 
-1. 	left join 左关联
+1. left join 左关联
 
-	select * from a left join b on ...
-	
-	左关联b表查询a表,生成的是a、b表的所有列的表,数据为a表所有数据+符合条件的关联上的b表的列,不符合条件的使用的为null来展示
+   > select * from a left join b on ...
+
+   左关联b表查询a表,生成的是a、b表的所有列的表,数据为a表所有数据+符合条件的关联上的b表的列,不符合条件的使用的为null来展示
+
+2. inner join 内关联
+
+   结果为2个表的交集
 
 #### 函数
 
