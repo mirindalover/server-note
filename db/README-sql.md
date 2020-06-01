@@ -22,6 +22,12 @@
 
 7. show  VARIABLES 查询服务器的配置
 
+8. SHOW FULL PROCESSLIST 查看数据库所有连接
+
+9. kill id	杀死某个连接
+
+10.	SHOW GRANTS	查看用户的权限
+
 #### 控制流程函数
 
 1. 	CASE 
@@ -45,6 +51,16 @@
 2. inner join 内关联
 
    结果为2个表的交集
+   
+3. union	合并查询
+
+	> 每个 SELECT 语句必须拥有相同数量的列
+	
+	> 列也必须拥有相似的数据类型
+	
+	> 列的顺序必须相同
+
+UNION ALL允许重复的值
 
 #### 函数
 
@@ -72,7 +88,7 @@ CREATE TABLE `table1` (
 
 #### 查看执行sql的计划
 
-	实用EXPLAIN字段添加在sql前面，查看执行计划。方便优化sql
+	使用EXPLAIN字段添加在sql前面，查看执行计划。方便优化sql
 	
 	返回列的含义：
 	
