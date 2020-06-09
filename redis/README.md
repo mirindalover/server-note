@@ -17,9 +17,16 @@ Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统�
 
 - get	返回`key`的`value`。如果key不存在，返回特殊值`nil`。如果`key`的`value`不是string，就返回错误，因为`GET`只处理string类型的`values`
 
+#### 集合
+
 - sadd	添加一个或多个指定的member元素到集合的 key中.指定的一个或者多个元素member 如果已经在集合key中存在则忽略.如果集合key 不存在，则新建集合key,并添加member元素到集合key中.如果key 的类型不是集合则返回错误	-返回值为成功添加的个数
 - srem	在key集合中移除指定的元素. 如果指定的元素不是key集合中的元素则忽略 如果key集合不存在则被视为一个空的集合，该命令返回0.如果key的类型不是一个集合,则返回错误	-返回值为成功移除的个数
 - sismember	返回成员 member 是否是存储的集合 key的成员
+- SCARD 获取集合的成员数
+
+- pexpire 设置过期时间
+
+- ttl	获取key的有效时间
 
 ### 案例
 
