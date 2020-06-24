@@ -28,6 +28,10 @@
 
 10.	SHOW GRANTS	查看用户的权限
 
+11. select version()	查看mysql的版本
+
+12. select * from mysql.user 查看所有用户
+
 #### 控制流程函数
 
 1. 	CASE 
