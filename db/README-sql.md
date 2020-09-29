@@ -145,7 +145,22 @@ CREATE TABLE `table1` (
 	
 	4. 不使用select *,使用具体的字段代替
 	
+5. presto函数
 
+	1. 窗口函数：查询所有行之间进行计算(运行在having后，order by 前)
+	
+		例：需要最大的一条 分组+排序
+		select * from(
+			select * RANK() over (partitaion by name,order by time desc) as rank from tablexx
+		)as rnk
+		where rnk.rank = 1;
+		
+		例：简单的分组+排序
+		select name,t1,t2,time,rank() over (partitaion by name,order by time desc) as rnk
+		from tablexx
+		order by name,rnk
+		
+	
 ### 链接
 
 - [高性能MySql]	
