@@ -24,6 +24,8 @@ Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统�
 - sismember	返回成员 member 是否是存储的集合 key的成员
 - SCARD 获取集合的成员数
 
+- SMEMBERS 获取集合所有元素
+
 - pexpire 设置过期时间
 
 - ttl	获取key的有效时间
