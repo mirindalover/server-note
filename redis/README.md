@@ -30,6 +30,8 @@ Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统�
 
 - ttl	获取key的有效时间
 
+- sunion 合并集合，也可以做查看集合命令(sunion [key] 即是查看集合)
+
 ### 源码
 
 - Redis字符使用SDS(simple dynamic string)，没有直接使用c字符

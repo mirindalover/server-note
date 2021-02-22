@@ -32,6 +32,16 @@
 
 12. select * from mysql.user 查看所有用户
 
+#### 索引
+
+1. 主键索引 ALTER TABLE `table_name` ADD PRIMARY KEY (`column`) 
+
+2. 唯一索引 ALTER TABLE `table_name` ADD UNIQUE (`column`) 
+
+3. INDEX(普通索引) ALTER TABLE `table_name` ADD INDEX index_name ( `column` ) 
+
+4. 联合索引 ALTER TABLE `table_name` ADD INDEX index_name ( `column1`, `column2`, `column3` )
+
 #### 控制流程函数
 
 1. 	CASE 
@@ -73,6 +83,8 @@ UNION ALL允许重复的值
 	计算datetime类型的值与现在的天数差(不会看后面的具体小时)
 
 ### 实用功能
+
+> 使用@xxx定义变量;使用@xxx:=123、@xxx:=@xxx+1来赋值
 
 #### 方便插入数据
 
