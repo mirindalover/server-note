@@ -10,6 +10,10 @@
 
 > menu_uuid、menu_level、parent_uuid、show_sort
 
+- portal_user_auth表的设计(一个菜单一条数据)
+
+> portal_uuid、menu_uuid、del_flag
+
 ### 接口逻辑
 
 - 获取用户有权限的菜单
