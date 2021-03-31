@@ -10,4 +10,4 @@
 
 上面TCC是程序同步进行，异步的比如使用MQ。MQ的分布式事务--可靠消息最终一致性方案(可靠消息服务)
 
-<img src="https://github.com/mirindalover/server-note/tree/master/%E9%AB%98%E5%B9%B6%E5%8F%91/resource/message_coherence.png" alt=""/>
+<img src="https://github.com/mirindalover/server-note/blob/master/%E5%88%86%E5%B8%83%E5%BC%8F/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/resource/message_coherence.png" alt=""/>
