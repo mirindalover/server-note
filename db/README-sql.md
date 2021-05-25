@@ -32,15 +32,50 @@
 
 12. select * from mysql.user 查看所有用户
 
+#### 常用sql
+
+1. 修改字段类型、说明
+
+   ```sql
+   ALTER TABLE
+     `table_name` CHANGE COLUMN `old_column_name` `column_name` longtext DEFAULT NULL COMMENT '描述';
+   ```
+
+   
+
+2. 添加字段
+
+   ```sql
+   ALTER TABLE
+     `table_name`
+   ADD
+     COLUMN `column_name` tinyint NOT NULL DEFAULT 0 COMMENT '描述' after 'other_column';
+   ```
+
+3. 修改数据
+ 
+	```sql
+	UPDATE table_name SET xxx = 1 WHERE xxx = ''
+   ```
+   
+   
+4. 修改数据
+ 
+	```sql
+	INSERT INTO table_name(field1,field2) VALUES ('','')
+	```
+	
 #### 索引
 
 1. 主键索引 ALTER TABLE `table_name` ADD PRIMARY KEY (`column`) 
 
-2. 唯一索引 ALTER TABLE `table_name` ADD UNIQUE (`column`) 
+2. 唯一索引 ALTER TABLE `table_name` ADD UNIQUE INDEX index_name (`column`) 
 
 3. INDEX(普通索引) ALTER TABLE `table_name` ADD INDEX index_name ( `column` ) 
 
 4. 联合索引 ALTER TABLE `table_name` ADD INDEX index_name ( `column1`, `column2`, `column3` )
+
+5. 删除索引 ALTER TABLE `table_name` DROP INDEX `index_name`
 
 #### 控制流程函数
 

@@ -1,4 +1,9 @@
 
+#### Spring 事务
+
+使用AOP开启事务时，子线程(内部类)对应的方法不会AOP。粗暴的解决方法：通过service.xxx(service就是自己)
+
+
 ### Spring Cloud
 
 #### 核心组件
