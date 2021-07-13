@@ -137,6 +137,19 @@ CREATE TABLE `table1` (
 
 3. load data local inpath '/usr/lib/data/data.txt' into table table1; 插入数据
 
+4. mysql的插入数据
+
+```sql
+	load data local infile 'D:/my_user_info.txt' into table user_info
+	CHARACTER SET utf8 -- 可选，避免中文乱码问题
+	FIELDS TERMINATED BY '||' -- 字段分隔符，每个字段(列)以什么字符分隔，默认是 \t
+		OPTIONALLY ENCLOSED BY '' -- 文本限定符，每个字段被什么字符包围，默认是空字符
+		ESCAPED BY '\\' -- 转义符，默认是 \
+	LINES TERMINATED BY '\n' -- 记录分隔符，如字段本身也含\n，那么应先去除，否则load data 会误将其视作另一行记录进行导入
+	(id, name, age, address, create_date) -- 每一行文本按顺序对应的表字段，建议不要省略
+```
+
+
 #### 查看执行sql的计划
 
 	使用EXPLAIN字段添加在sql前面，查看执行计划。方便优化sql
