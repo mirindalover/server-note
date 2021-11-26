@@ -60,4 +60,18 @@ docker ps 查看启动的容器id
 
 docker exec -it [容器id] /bin/sh
 
-- 
+#### 安装redis
+
+- 启动
+
+```shell
+docker run --name some-redis -d redis
+```
+- 进入redis
+
+```shell
+docker exec -it some-redis /bin/bash
+
+redis-cli 
+```
+
