@@ -75,3 +75,9 @@ docker exec -it some-redis /bin/bash
 redis-cli 
 ```
 
+#### 安装clickhouse
+
+https://hub.docker.com/r/clickhouse/clickhouse-server/
+
+根据文档需要启动server
+连接需要启动client

@@ -66,4 +66,5 @@ Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统�
 [京东Redis缓存系统](http://wiki.cbpmgt.com/confluence/pages/viewpage.action?pageId=15861929)-只能通过内网打开
 
 [Redis分布式锁](https://redis.io/topics/distlock)、[译文](http://ifeve.com/redis-lock/)
+[redis文章推荐](http://kaito-kidd.com/)
 
