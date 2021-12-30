@@ -1,3 +1,14 @@
+#### TCP连接
+
+1、端口限制：每个tcp四元素(源ip、源端口、目标ip、目标端口)，所以如果连接一个ip+端口是固定的，那么是受到ip_local_port_rang限制的(/etc/sysctl.conf)
+2、文件描述符即fd：每建立一个tcp系统分配一个fd，受到限制(系统级：/proc/sys/fs/file-max;用户级:/etc/security/limits.conf;进程级： ulimit -n)
+3、线程：
+
+> C10K问题(同时连接到服务器的客户端数量超过10k个，即便硬件性能好也无法提供服务)
+> 解决：通过单个线程服务多个客户端请求，通过异步编程和事件触发、IO采用非阻塞
+
+4、内存(每个tcp连接有缓冲区)、CPU限制
+
 #### fd-File descriptor(文件描述符)
 
 Linux系统中，所有都可以抽象成文件。如：文件、目录、socket、管道、线程start都会返回一个fd存起来
