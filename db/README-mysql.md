@@ -109,7 +109,18 @@ ACID表示原子性（atomicity）、一致性（consistency）、隔离性（is
 
   > 事务一旦提交，它对数据库的改变就应该是永久性的。接下来的其他操作或故障不应该对其有任何影响
 
-
+### Statement、PreparedStatement
+	
+	Statement是直接把sql提交到数据库
+	
+	PreparedStatement：吧sql语句变量抽出来
+	
+	> PreparedStatement继承了Statement，为了解决Statement对象多次执行同一个sql语句的效率问题
+	>
+	> PreparedStatement机制是在数据库支持预编译下，将sql预编译。当执行sql时，直接执行编译好的sql
+	
+	PreparedStatement同时也可以防止sql安全问题
+	
 
 ### 链接
 
