@@ -38,3 +38,9 @@ Hive的本质是将Hql转化为mapreduce
 6. Hive可扩展性高
 
 7. Hive数据规模大
+
+#### MPP架构
+
+MPP(Massively Parallel Processing)，大规模并行处理
+
+MPP是将任务并行的分散到多个服务器和节点上，在每个节点上计算完成后，将各自部分的结果汇总在一起得到最终的结果(与Hadoop相似)
