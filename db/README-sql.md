@@ -51,6 +51,7 @@
    ADD
      COLUMN `column_name` tinyint NOT NULL DEFAULT 0 COMMENT '描述' after 'other_column';
    ```
+      
 
 3. 修改数据
  
@@ -63,6 +64,12 @@
  
 	```sql
 	INSERT INTO table_name(field1,field2) VALUES ('','')
+	```
+
+5、删除字段
+
+	```sql
+		ALTER TABLE 表名 DROP COLUMN 列名
 	```
 	
 #### 索引
