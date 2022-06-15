@@ -72,6 +72,13 @@
 		ALTER TABLE 表名 DROP COLUMN 列名
 	```
 	
+6、修改表名
+
+	```sql
+		ALTER TABLE table_name   
+		RENAME TO new_table_name;
+	```
+
 #### 索引
 
 1. 主键索引 ALTER TABLE `table_name` ADD PRIMARY KEY (`column`) 
