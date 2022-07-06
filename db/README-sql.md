@@ -135,6 +135,10 @@ UNION ALL允许重复的值
 
 > 使用@xxx定义变量;使用@xxx:=123、@xxx:=@xxx+1来赋值
 
+> 使用with as 提高sql可读性
+
+> 使用in过滤时，in的列表太大。可以使用inner join优化(结合 union all,或者借助其他表来得到结果)
+
 #### 方便插入数据
 
 1. 建表是加上特定的语句：ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t';
